@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'passengers.apps.PassengersConfig',
     'three_gs.apps.ThreeGsConfig',
+    'flight.apps.FlightConfig',
+    'seat.apps.SeatConfig',
 ]
 
 MIDDLEWARE = [
