@@ -12,8 +12,9 @@ class Passenger(models.Model):
     personal_item = models.ForeignKey(CarryOn, on_delete=models.SET_DEFAULT, default=None, related_name='personal_item')
     carry_on = models.ForeignKey(CarryOn, on_delete=models.SET_DEFAULT, default=None, related_name='carry_on')
 
-    class Meta:
-        abstract = True
+    # @TODO
+    # class Meta:
+    #     abstract = True
 
     def __str__(self):
         return self.name
