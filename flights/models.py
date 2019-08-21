@@ -35,4 +35,9 @@ class Seat(models.Model):
     def __str__(self):
         return f'name:[{self.name}] flight:[{self.flight}] passenger:[{self.passenger}]'
 
+class ThreeGs(Passenger):
+    accessories = models.CharField(max_length=256)
 
+    def sanitizer_spray(snake):
+        snake.health -= 10
+        print("Ew gross!")
