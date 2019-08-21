@@ -37,7 +37,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'flights.apps.FlightsConfig'
+
+    # 3rd Party
+    'rest_framework',
+
+    # Local
+    'flights.apps.FlightsConfig',
+    'api.apps.ApiConfig'
 ]
 
 MIDDLEWARE = [
