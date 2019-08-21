@@ -3,7 +3,7 @@ from django.db import models
 # Create your models here.
 class Flight(models.Model):
     name = models.CharField(max_length=256)
-    airborne = models.BooleanField
+    airborne = models.BooleanField()
 
     def __str__(self):
         return f'name:[{self.name}] airborne:[{self.airborne}]'
@@ -25,7 +25,7 @@ class Passenger(models.Model):
     #     abstract = True
 
     def __str__(self):
-        return self.name
+        return f'name:[{self.name}] personal_item:[{self.personal_item}] carry_on:[{self.carry_on}]'
 
 class Seat(models.Model):
     name = models.CharField(max_length=256)
@@ -38,6 +38,6 @@ class Seat(models.Model):
 class ThreeGs(Passenger):
     accessories = models.CharField(max_length=256)
 
-    def sanitizer_spray(snake):
+    def sanitizer_spray(self, snake):
         snake.health -= 10
         print("Ew gross!")
