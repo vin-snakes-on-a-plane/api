@@ -25,7 +25,7 @@ class Passenger(models.Model):
     #     abstract = True
 
     def __str__(self):
-        return self.name
+        return f'name:[{self.name}] personal_item:[{self.personal_item}] carry_on:[{self.carry_on}]'
 
 class Seat(models.Model):
     name = models.CharField(max_length=256)
