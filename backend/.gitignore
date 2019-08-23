@@ -4,6 +4,7 @@ e.cmd
 t.cmd
 p.cmd
 migrations
+.vscode
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
