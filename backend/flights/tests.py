@@ -13,3 +13,6 @@ class CarryOnTestCase(TestCase):
     def test_default_attack(self):
         rake = CarryOn.objects.get(name = "rake")
         self.assertEqual(rake.attack, 100)
+
+    #def test_fail(self):
+    #    self.assertEqual(True, False)
