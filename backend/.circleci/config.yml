@@ -1,7 +1,7 @@
 version: 2
 jobs:
   build:
-    working_directory: /code
+    working_directory: ~/snakes-on-a-plane/backend
     docker:
       - image: circleci/python:3.7.2
         environment:
