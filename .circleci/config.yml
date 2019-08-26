@@ -29,6 +29,7 @@ jobs:
             - "/usr/local/lib/python3.7/site-packages"
       - run:
           command: |
+            cd backend ; \
             pipenv run python manage.py test
       - store_test_results:
           path: test-results
