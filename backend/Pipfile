@@ -9,6 +9,8 @@ pylint = "*"
 [packages]
 django = "*"
 djangorestframework = "*"
+httpie = "*"
+circleci = "*"
 
 [requires]
 python_version = "3.7"
